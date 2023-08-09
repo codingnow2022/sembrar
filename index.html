@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="cont-nav" id="nav-fixed">
+            <nav>
+                <div class="nav-left">
+                    <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Sembrar"></a>
+
+                    <button><i class="fa-solid fa-location-dot"></i>Ubicación <i
+                            class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="nav-center">
+                    <ul>
+                        <a href="#" class="active">Inicio</a>
+                        <a href="#">Tienda</a>
+                        <a href="#">Nosotros</a>
+                        <a href="#">Aliados</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Experincias</a>
+                        <a href="#">Súmate</a>
+                        <a href="#">Blog</a>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="search"><input type="text" placeholder="Buscar.."><button><i
+                                    class="fa-solid fa-magnifying-glass"></i></button></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div id="hero">
+            <h1>Compra tus productos 100% orgánicos</h1>
+            <h2>Del Campo a Tu Mesa</h2>
+
+        </div>
+        <div id="buscador-sembrar">
+            <form action="#">
+                <div class="row">
+                    <div class="col-3">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Categoría...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Producto...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Cantidad...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn-sembrar"><i
+                                class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="productos">
+            <div class="cont-productoss">
+                <h2>Productos Destacados</h2>
+
+                <p class="text-apoyo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus
+                    dolor qui rerum aut!
+                </p>
+                <!-- <div class="categorias-productos">
+                    <a href="#" class="btn-categoria active">Todos</a>
+                    <a href="#" class="btn-categoria">Frutas</a>
+                    <a href="#" class="btn-categoria">Verduras</a>
+                    <a href="#" class="btn-categoria">Otros</a>
+                </div> -->
+
+                <div class="row cont-productos">
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn-sembrar"> Ver Más <i class="fa-solid fa-plus"></i></a>
+            </div>
+        </section>
+
+        <section id="descuentos">
+            <div class="cont-descuentos">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-descuento vegetales">
+                            <h3>Oferta Especial</h3>
+                            <h2>Vegetales <br> Frescos</h2>
+                            <p>Con hasta el 30% de descuento</p>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i>Comprar Ahora</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-descuento frutas">
+                            <h3>Oferta Especial</h3>
+                            <h2>Frutas <br> Deliciosas</h2>
+                            <p>Con hasta el 30% de descuento</p>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i>Comprar Ahora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="marketplace">
+            <div class="cont-productoss">
+                <h2>Market Place</h2>
+
+                <p class="text-apoyo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus
+                    dolor qui rerum aut!
+                </p>
+                <div class="categorias-productos">
+                    <a href="#" class="btn-categoria active">Todos</a>
+                    <a href="#" class="btn-categoria">Frutas</a>
+                    <a href="#" class="btn-categoria">Verduras</a>
+                    <a href="#" class="btn-categoria">Otros</a>
+                </div>
+
+                <div class="row cont-productos">
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-2.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-3.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn-sembrar"> Ver Más <i class="fa-solid fa-plus"></i></a>
+            </div>
+        </section>
+
+        <section id="pauta-vendedor">
+            <div class="cont-pauta">
+                <div class="row">
+                    <div class="col-md-6 calltoaction">
+                        <h2>¿Quieres Ser Aliado de la Familia Sembrar?</h2>
+                        <p>Únete al exitoso ecosistema emprendedor agrícola y cultiva tu éxito. Descubre un mundo de oportunidades para tus productos y servicios agrícolas en nuestro marketplace especializado. Expande tu negocio y cosecha el crecimiento junto a nosotros.</p>
+
+                        <a href="#" class="btn-principal"><i class="fa-solid fa-user-group"></i>Solicitar Asesoría</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="recientes">
+            <div class="cont-productoss">
+                <h2>Publicados Recientemente</h2>
+
+                <p class="text-apoyo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptatibus
+                    dolor qui rerum aut!
+                </p>
+
+                <div class="row cont-productos carousel-recientes">
+
+                    <div class="card-producto descuento">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-producto ">
+                        <a href="producto-detalle.html">
+                            <div class="card-img">
+                                <img src="img/product-8.jpg" alt="Producto">
+                            </div>
+                            <div class="card-info">
+                                <h3>Naranjas</h3>
+                                <div class="price-btn-cart">
+                                    <p><span>$</span>4500 - (1Kg) </p>
+                                    <a href="#" class="comprar"><i class="fa-solid fa-cart-shopping"></i>Comprar</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn-sembrar"> Ver Más <i class="fa-solid fa-plus"></i></a>
+            </div>
+        </section>
+
+
+        <section id="pautas-verticales">
+            <div class="cont-pauta">
+                <h2>Familia Sembrar</h2>
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="card-pauta-v">
+                            <img src="img/mango.jpg" alt="">
+                            <div class="info">
+                                
+                                <h3>Empresa o Emprendimiento Aliado</h3>
+                                
+                                <a href="#"><i class="fa-solid fa-square-up-right"></i> Visitar</a>
+
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-pauta-v">
+                            <img src="img/miel.jpg" alt="">
+                            <div class="info">
+                                
+                                <h3>Empresa o Emprendimiento Aliado</h3>
+                                
+                                <a href="#"><i class="fa-solid fa-square-up-right"></i> Visitar</a>
+
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-pauta-v">
+                            <img src="img/cafe.jpg" alt="">
+                            <div class="info">
+                                
+                                <h3>Empresa o Emprendimiento Aliado</h3>
+                                
+                                <a href="#"><i class="fa-solid fa-square-up-right"></i> Visitar</a>
+
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="proceso-compra">
+            <div class="cont-proceso">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card-proceso">
+                           <img src="img/procesos/compra.png" alt="">
+                            <div class="info">
+                                <h3>Elige tus Productos</h3>
+                                <p>Selecciona y añade al carrito.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-proceso">
+                            <img src="img/procesos/pago.png" alt="">
+                            <div class="info">
+                                <h3>Paga en Línea</h3>
+                                <p>Elige entre los diferentes métodos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-proceso">
+                            <img src="img/procesos/envio.png" alt="">
+                            <div class="info">
+                                <h3>Enviámos tu Pedido</h3>
+                                <p>Recibirás tu compra en menos tiempo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-proceso">
+                            <img src="img/procesos/confirma.png" alt="">
+                            <div class="info">
+                                <h3>Confirma tu Compra</h3>
+                                <p>Ganrás puntos que podrás redimir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="cont-footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="logo"><img src="img/logo1.png" alt=""></a>
+                    <p class="p-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex qui voluptates mollitia nulla natus? Quae ea quibusdam odio.</p>
+                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> Escríbenos</a>
+                </div>
+                <div class="col-md-3">
+                    <h2>Contáctanos</h2>
+                    <p><span>Teléfono:</span>3212439492</p>
+                    <p><span>Teléfono:</span>3212439492</p>
+                    <p><span>Email:</span>infoweb@sembraronline.com</p>
+                    <ul class="redes">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Atención al Cliente</h2>
+                    <ul>
+                        <li><a href="#">¿Quieres ser aliado?</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Pqrs</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>¿Te perdiste de algo?</h2>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Aliados</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Experiencias</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p> © Copyright 2023 - Restrepo Desarrollos</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        // Obtener el elemento con el ID "hero"
+        const heroElement = document.getElementById('hero');
+        const nav = document.getElementById('nav-fixed');
+
+        // Función para agregar o eliminar la clase "active-scroll" según la posición de desplazamiento
+        function handleScroll() {
+            // Obtener la posición de desplazamiento vertical
+            const scrollY = window.scrollY;
+
+            // Ajusta el valor de offset según sea necesario, esto determina cuándo se agrega la clase
+            const offset = 100;
+
+            if (scrollY > offset) {
+                heroElement.classList.add('active-scroll');
+                nav.classList.add('active-scroll');
+            } else {
+                heroElement.classList.remove('active-scroll');
+                nav.classList.remove('active-scroll');
+            }
+        }
+
+        // Agregar un event listener para el evento de scroll
+        window.addEventListener('scroll', handleScroll);
+    </script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            $('.carousel-recientes').slick({
+                dots: false,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 6000,
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
